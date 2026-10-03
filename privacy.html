@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>upload_kit 개인정보처리방침</title>
+<style>
+:root{--bg:#ffffff;--fg:#1d2127;--mute:#5d6672;--line:#d9dee5;--link:#1a5fb4}
+@media (prefers-color-scheme: dark){:root{--bg:#16181c;--fg:#e6e8eb;--mute:#9aa3ad;--line:#2f343b;--link:#7fb4ff}}
+body{margin:0;padding:24px 16px;background:var(--bg);color:var(--fg);font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.7}
+main{max-width:720px;margin:0 auto}
+h1{font-size:24px;margin:0 0 8px} h2{font-size:18px;margin:28px 0 8px;border-top:1px solid var(--line);padding-top:18px}
+p.meta{color:var(--mute);font-size:14px;margin:0 0 20px} a{color:var(--link)} li{margin:4px 0} code{font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<h1>upload_kit 개인정보처리방침</h1>
+<p class="meta">시행일 2026-10-03 · <a href="index.html">upload_kit 홈페이지</a></p>
+
+<h2>1. 누가 쓰나요</h2>
+<p>upload_kit 은 유튜브 채널 운영자 본인(채널 소유자 또는 그 채널의 브랜드 계정 관리자)이 자기 PC 에서 자기 채널에 영상을 올릴 때만 쓰는 개인용 도구입니다.
+다른 사람에게 배포하거나 판매하지 않으며, 다른 사람의 계정으로 로그인하지 않습니다.</p>
+
+<h2>2. 요청하는 권한과 이유</h2>
+<ul>
+<li><code>https://www.googleapis.com/auth/youtube.upload</code> — 운영자가 승인한 영상을 운영자의 채널에 올리기 위해</li>
+<li><code>https://www.googleapis.com/auth/youtube.readonly</code> — 로그인한 채널이 올릴 채널과 같은지 확인하고, 올린 영상의 처리 상태·공개 범위·예약 시각을 확인하고, 같은 영상을 두 번 올리지 않도록 채널의 최근 업로드 목록을 대조하기 위해</li>
+</ul>
+<p>영상을 지우거나 채널 설정을 바꾸는 권한은 요청하지 않습니다. 비밀번호는 다루지 않습니다(로그인은 구글의 로그인 화면에서 합니다).</p>
+
+<h2>3. 다루는 정보</h2>
+<ul>
+<li>로그인한 채널의 채널 ID · 채널 이름 · 핸들</li>
+<li>이 도구로 올린 영상의 영상 ID · 제목 · 처리 상태 · 공개 범위 · 예약 시각</li>
+<li>중복 확인을 위한 채널의 최근 업로드 목록(영상 ID · 제목 · 올린 파일 이름)</li>
+</ul>
+
+<h2>4. 저장</h2>
+<ul>
+<li>로그인 열쇠(갱신 토큰)는 운영자 PC 에 Windows 사용자 계정 암호화(DPAPI)로만 보관합니다. 그 PC 의 그 Windows 사용자만 풀 수 있습니다.</li>
+<li>업로드 기록(영상 ID · 제목 · 시각 · 상태)은 운영자 PC 의 기록 파일에 남습니다.</li>
+<li>어떤 정보도 외부 서버로 보내지 않습니다(구글·유튜브 API 호출 자체는 빼고).</li>
+</ul>
+
+<h2>5. 공유와 사용 제한</h2>
+<p>구글 API 로 받은 정보를 누구와도 공유하거나 팔지 않으며, 광고 · 분석 · 인공지능 학습에 쓰지 않습니다. 위 2·3 의 목적에만 씁니다.</p>
+<p>upload_kit's use and transfer of information received from Google APIs will adhere to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>6. 취소와 삭제</h2>
+<ul>
+<li>언제든 구글 계정의 <a href="https://myaccount.google.com/connections">서드 파티 앱 및 서비스</a>에서 upload_kit 의 접근을 취소할 수 있습니다.
+구글의 <a href="https://security.google.com/settings/security/permissions">보안 설정 — 앱 액세스 권한</a>에서도 취소할 수 있습니다.</li>
+<li>도구의 <code>logout</code> 명령은 구글에 취소를 요청하고 PC 에 보관한 로그인 열쇠를 지웁니다.</li>
+<li>업로드 기록은 운영자 PC 의 기록 파일을 지우면 없어집니다.</li>
+</ul>
+
+<h2>7. YouTube API 서비스 이용 고지</h2>
+<p>이 도구는 YouTube API 서비스를 사용합니다. <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a> ·
+<a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></p>
+
+<h2>8. 바뀔 때</h2>
+<p>이 방침을 바꾸면 이 페이지의 시행일을 고칩니다.</p>
+</main>
+</body>
+</html>
